@@ -54,16 +54,16 @@ li{
 .btn#zuma:hover, .btn#zuma:focus{background-color: #F47736;transition: background-color 1s; color: #fff; outline:0 !important;}
 .btn#everest:hover, .btn#everest:focus{background-color: #5AC2B3;transition: background-color 1s; color: #fff; outline:0 !important;}
 
-.image-rounded{
-	text-align: center;
-	width: 100%;
-	margin: auto;
-	border-radius: 10px;
-}
 
-.puppies{
-	display: flex;
-	width: 70%;
-	justify-content: center;
-	padding-top: 10px;
-}
+.puppies{display: flex; flex-direction: column; width: 70%; justify-content: center; padding-top: 10px;}
+.name{text-align: center;}
+.wrap{display: flex; flex-direction: column;}
+.pic{max-width: 200px; height: auto; margin: 0 auto auto auto;}
+.desc{font-size: 1.2em; font-weight: 400; padding: 20px 30px 20px 30px;}
+
+@media(790) 
+
+
+
+
+
