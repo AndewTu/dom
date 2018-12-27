@@ -1,6 +1,9 @@
+
 body{
-	margin: 0px; 
+	max-width: 100%;
 	overflow-x: hidden;
+	margin: 0px;
+	padding: 0px;
 }
 .container{
 	display: flex;
@@ -15,7 +18,6 @@ body{
 	text-align: center;
 	padding-top: 10px;
 }
-
 ul{
 	align-self: center;
 	display: flex;
@@ -23,6 +25,7 @@ ul{
   	list-style: none;
   	text-decoration: none;
   	width: 100%;
+  	padding: 0px;
 }
 li{
 	padding: 10px;
@@ -55,13 +58,58 @@ li{
 .btn#everest:hover, .btn#everest:focus{background-color: #5AC2B3;transition: background-color 1s; color: #fff; outline:0 !important;}
 
 
-.puppies{display: flex; flex-direction: column; width: 70%; justify-content: center; padding-top: 10px;}
-.name{text-align: center;}
-.wrap{display: flex; flex-direction: column;}
-.pic{max-width: 200px; height: auto; margin: 0 auto auto auto;}
-.desc{font-size: 1.2em; font-weight: 400; padding: 20px 30px 20px 30px;}
+.puppies{
+	display: flex;
+	flex-direction: column;
+	width: 70%; 
+	justify-content: center; 
+	padding-top: 10px;
+}
+.name{
+	text-align: center;
+	color: #109FDA;
+	text-transform: uppercase;
+}
+.pic{
+	max-width: 200px; 
+	height: auto;
+	margin: 0 auto auto auto;
+}
+.desc{
+	font-size: 1.2em; 
+	font-weight: 400; 
+	padding: 20px 30px 20px 30px;}
 
-@media(790) 
+@media (max-width: 790px) {
+	.container{
+		flex-direction: column;
+		align-items: center;
+	}
+	.navi{
+		width: 100%;
+		align-items: center;
+	}
+	.puppies{
+		width: 100%;
+	}
+	.desc{
+		padding: 20px 20px 20px 20px;
+	}
+	ul{
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+li{
+	padding: 10px;
+}
+.btn{	
+	height: 45px;
+	width: 100px;
+	font-size: 0.7em;
+    font-weight: 500;
+}
+}
 
 
 
