@@ -7,3 +7,20 @@ let paws = [
 	{id:'rocky', img:'img/rocky.png', name:'Rocky', description:'Rocky is a six-year-old Mixed Breed recycling pup. He is a creative canine, has a thousand ideas, and someone else’s trash is often his treasure. Rocky can usually find just the right thing to solve a problem. Rocky can get a little scruffy; he’s not a fan of baths and doesn’t like getting wet at all.'},
 	{id:'everest', img:'img/everest.png', name:'Everest', description:'The most recent pup to join the PAW Patrol, Everest is a fearless and feisty eight-year-old Husky pup and the team’s amazing forest ranger. She’s completely at home in the wild and is a big help to Jake up on his mountain. Everest comes down to join the team for any rescue in the snow or the woods.'}]
 
+function show (){
+paws.forEach (function(item){
+	console.log(item.id, item.name)
+})
+}
+document.querySelector('li:nth-child(1)').addEventListener("click", show)
+document.querySelector('li:nth-child(2)').addEventListener("click", show)
+document.querySelector('li:nth-child(3)').addEventListener("click", show)
+document.querySelector('li:nth-child(4)').addEventListener("click", show)
+document.querySelector('li:nth-child(5)').addEventListener("click", show)
+document.querySelector('li:nth-child(6)').addEventListener("click", show)
+document.querySelector('li:nth-child(7)').addEventListener("click", show)
+/**
+butts.forEach( function(element) {
+	element.addEventListener('click', show)
+});
+**/

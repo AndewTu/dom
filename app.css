@@ -5,7 +5,13 @@ body{
 	margin: 0px;
 	padding: 0px;
 }
+.content{
+	display: flex;
+	justify-content: center;
+}
 .container{
+	max-width: 1280px;
+	height: auto;
 	display: flex;
 	align-items: flex-start;
 	flex-direction: row;
